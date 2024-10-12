@@ -1,0 +1,22 @@
+.category {
+    background-color: #fff;
+
+.category__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 21px;
+
+    button {
+        padding: 13px 25px;
+        background-color: transparent;
+        border: none;
+        color: #768088;
+        margin: 10px;
+        &:hover {
+            background-color: #cfd7df;
+            border-radius: 3px;
+        }
+    }
+}
+}

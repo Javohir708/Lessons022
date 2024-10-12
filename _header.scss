@@ -1,0 +1,40 @@
+.header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+
+    .navbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 74px;
+        padding: 10px;
+        transition: backdrop-filter 0.5s ease, background-color 0.5s ease;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+
+        .navbar__collection {
+            display: flex;
+            align-items: center;
+            gap: 41px;
+
+            .navbar__link {
+                color: #fff;
+                font-size: 12px;
+                font-weight: 400;
+                text-transform: uppercase;
+            }
+        }
+
+        .navbar__menu {
+            display: none;
+        }
+    }
+
+    .navbar.scrolled {
+        backdrop-filter: blur(10px);
+        background-color: rgba(203, 198, 198, 0.773);
+    }
+}
